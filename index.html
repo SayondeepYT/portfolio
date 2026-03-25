@@ -5,13 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sayondeep Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
+
     body {
       font-family: 'Poppins', sans-serif;
-      background: linear-gradient(135deg, #0f172a, #1e293b);
+      background: radial-gradient(circle at top, #0f172a, #020617);
       color: #fff;
-      line-height: 1.6;
     }
 
     header {
@@ -19,22 +23,34 @@
       padding: 100px 20px 60px;
     }
 
-    header h1 { font-size: 3rem; }
-    header p { opacity: 0.7; margin-top: 10px; }
+    header img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #38bdf8;
+      box-shadow: 0 0 25px #38bdf8;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-top: 20px;
+    }
+
+    header p { opacity: 0.7; }
 
     .btn {
       display: inline-block;
       margin-top: 20px;
-      padding: 10px 20px;
-      border-radius: 25px;
-      background: #38bdf8;
-      color: #000;
+      padding: 12px 25px;
+      border-radius: 30px;
+      background: linear-gradient(45deg, #38bdf8, #6366f1);
+      color: #fff;
       text-decoration: none;
-      font-weight: bold;
     }
 
     section {
-      padding: 60px 20px;
+      padding: 70px 20px;
       max-width: 1100px;
       margin: auto;
     }
@@ -48,138 +64,107 @@
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
+      gap: 25px;
     }
 
     .card {
       background: rgba(255,255,255,0.05);
-      padding: 20px;
-      border-radius: 15px;
-      transition: 0.3s;
+      padding: 25px;
+      border-radius: 20px;
+      transition: 0.4s;
     }
 
     .card:hover {
       transform: translateY(-10px);
-      background: rgba(255,255,255,0.1);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.5);
     }
 
-    .skills span {
-      display: block;
-      margin: 10px 0;
+    .icons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
     }
 
-    .bar {
-      height: 8px;
-      background: #1e293b;
-      border-radius: 10px;
-      overflow: hidden;
-      margin-bottom: 15px;
-    }
-
-    .bar div {
-      height: 100%;
-      background: #38bdf8;
-    }
-
-    .contact p, .about p {
-      text-align: center;
-      opacity: 0.8;
-      margin: 10px 0;
-    }
-
-    .links {
-      text-align: center;
-      margin-top: 10px;
-    }
-
-    .links a {
-      color: #38bdf8;
-      margin: 0 10px;
-      text-decoration: none;
-    }
+    .icons img { width: 50px; }
 
     footer {
       text-align: center;
       padding: 20px;
       opacity: 0.6;
     }
+
+    a { color: #38bdf8; text-decoration: none; }
   </style>
 </head>
 <body>
 
-<header>
-  <img src="profile.jpg" alt="Sayondeep" style="width:150px;height:150px;border-radius:50%;object-fit:cover;margin-bottom:20px;border:3px solid #38bdf8;">
+<header data-aos="fade-down">
+  <img src="profile.jpg" alt="Sayondeep">
   <h1>Hi, I'm Sayondeep 👋</h1>
   <p>Full Stack Developer | Gamer | Content Creator</p>
   <a href="#projects" class="btn">View Projects</a>
 </header>
 
-<section class="about">
-  <h2>Professional Summary</h2>
-  <p>
-    Computer Science Engineering student with strong expertise in web development and versatile programming skills.
-    Experienced in UI design, game development, and multimedia content creation. Demonstrates practical application
-    of technical knowledge through various projects and possesses a comprehensive understanding of software testing.
+<section data-aos="fade-up">
+  <h2>🚀 Featured Projects</h2>
+  <div class="grid">
+    <div class="card">
+      <h3><a href="https://different-recipes.vercel.app/">🍳 Recipe Website</a></h3>
+      <p>Full web platform with UI + functionality</p>
+    </div>
+
+    <div class="card">
+      <h3><a href="https://normal-projects.vercel.app/">🧮 Calculator App</a></h3>
+      <p>Interactive calculator with clean UI</p>
+    </div>
+  </div>
+</section>
+
+<section data-aos="fade-up">
+  <h2>🛠 Tech Stack</h2>
+  <div class="icons">
+    <img src="https://skillicons.dev/icons?i=html">
+    <img src="https://skillicons.dev/icons?i=css">
+    <img src="https://skillicons.dev/icons?i=js">
+    <img src="https://skillicons.dev/icons?i=python">
+    <img src="https://skillicons.dev/icons?i=cpp">
+    <img src="https://skillicons.dev/icons?i=kotlin">
+  </div>
+</section>
+
+<section data-aos="fade-up">
+  <h2>📊 GitHub Stats</h2>
+  <div style="text-align:center">
+    <img src="https://github-readme-stats.vercel.app/api?username=SayondeepYT&show_icons=true&theme=tokyonight">
+  </div>
+</section>
+
+<section data-aos="fade-up">
+  <h2>🎮 Content</h2>
+  <p style="text-align:center">Check out my YouTube:</p>
+  <p style="text-align:center">
+    <a href="https://youtube.com/@SayondeepYT" target="_blank">Visit Channel</a>
   </p>
 </section>
 
-<section id="projects">
-  <h2>Projects</h2>
-  <div class="grid">
-    <div class="card">
-      <h3>Interactive Calculator</h3>
-      <p>Functional calculator demonstrating programming logic and UI design</p>
-    </div>
-    <div class="card">
-      <h3>Cooking Recipe Website</h3>
-      <p>Web platform for sharing and accessing recipes</p>
-    </div>
-    <div class="card">
-      <h3>Unity Parkour Game</h3>
-      <p>Parkour-style game with mechanics and interactions</p>
-    </div>
-  </div>
-</section>
-
-<section>
-  <h2>Technical Skills</h2>
-  <div class="skills">
-    <span>Python</span>
-    <div class="bar"><div style="width:80%"></div></div>
-
-    <span>JavaScript</span>
-    <div class="bar"><div style="width:75%"></div></div>
-
-    <span>C/C++</span>
-    <div class="bar"><div style="width:70%"></div></div>
-
-    <span>Kotlin</span>
-    <div class="bar"><div style="width:65%"></div></div>
-  </div>
-</section>
-
-<section>
-  <h2>Additional Experience</h2>
-  <div class="grid">
-    <div class="card">YouTube Content Creator</div>
-    <div class="card">Game Testing & Review</div>
-    <div class="card">Gaming Account Management</div>
-  </div>
-</section>
-
-<section class="contact">
-  <h2>Contact</h2>
-  <p>Email: sayondeepghosh@gmail.com</p>
-  <div class="links">
-    <a href="https://github.com/SayondeepYT" target="_blank">GitHub</a>
-    <a href="https://linkedin.com/in/sayondeep-ghosh-693245319" target="_blank">LinkedIn</a>
-    <a href="https://youtube.com/SayondeepYT" target="_blank">YouTube</a>
-  </div>
+<section data-aos="fade-up">
+  <h2>📬 Contact</h2>
+  <p style="text-align:center">sayondeepghosh@gmail.com</p>
+  <p style="text-align:center">
+    <a href="https://github.com/SayondeepYT">GitHub</a> | 
+    <a href="https://linkedin.com/in/sayondeep-ghosh-693245319">LinkedIn</a>
+  </p>
 </section>
 
 <footer>
   © 2026 Sayondeep — Built with ❤️
 </footer>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 
 </body>
 </html>
