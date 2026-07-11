@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sayondeep | Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-logo">
+        <span class="logo-bracket">&lt;</span>Sayondeep<span class="logo-bracket">/&gt;</span>
+      </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="hero-bg">
+        <div class="grid-overlay"></div>
+        <div class="particles" id="particles"></div>
+      </div>
+      <div class="hero-content">
+        <p class="hero-greeting">Hello, World! 👋 I'm</p>
+        <h1 class="hero-name">Sayondeep</h1>
+        <div class="hero-role">
+          <span>I'm a </span>
+          <span class="typed-text" id="typed-text"></span>
+          <span class="cursor">|</span>
+        </div>
+        <p class="hero-tagline">Building digital experiences, one line at a time.</p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+        </div>
+        <div class="hero-socials">
+          <a href="https://github.com/SayondeepYT" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://youtube.com/@SayondeepYT" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+            <i class="fab fa-youtube"></i>
+          </a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </div>
+      </div>
+      <div class="hero-scroll-hint">
+        <a href="#about" aria-label="Scroll down">
+          <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section" id="about">
+      <div class="container">
+        <h2 class="section-title reveal">About <span>Me</span></h2>
+        <div class="about-grid">
+          <div class="about-image reveal">
+            <div class="image-wrapper">
+              <div class="avatar-placeholder">
+                <i class="fas fa-user-astronaut"></i>
+              </div>
+              <div class="image-glow"></div>
+            </div>
+          </div>
+          <div class="about-text reveal">
+            <h3>Who am I?</h3>
+            <p>
+              I'm a passionate developer and content creator who loves turning ideas into
+              reality through code. I enjoy building sleek web applications and sharing
+              knowledge with the community through my YouTube channel.
+            </p>
+            <p>
+              When I'm not coding, you can find me exploring new technologies, gaming,
+              or creating educational content. I believe in writing clean, efficient code
+              and crafting user experiences that make a difference.
+            </p>
+            <div class="about-stats">
+              <div class="stat">
+                <span class="stat-num" data-target="20">0</span><span class="stat-plus">+</span>
+                <p>Projects</p>
+              </div>
+              <div class="stat">
+                <span class="stat-num" data-target="3">0</span><span class="stat-plus">+</span>
+                <p>Years Coding</p>
+              </div>
+              <div class="stat">
+                <span class="stat-num" data-target="500">0</span><span class="stat-plus">+</span>
+                <p>Subscribers</p>
+              </div>
+            </div>
+            <a href="#contact" class="btn btn-primary">Let's Connect</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills section" id="skills">
+      <div class="container">
+        <h2 class="section-title reveal">My <span>Skills</span></h2>
+        <div class="skills-grid">
+          <div class="skill-card reveal" style="--delay: 0.1s">
+            <div class="skill-icon"><i class="fab fa-html5"></i></div>
+            <h3>HTML5</h3>
+            <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+          </div>
+          <div class="skill-card reveal" style="--delay: 0.15s">
+            <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+            <h3>CSS3</h3>
+            <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+          </div>
+          <div class="skill-card reveal" style="--delay: 0.2s">
+            <div class="skill-icon"><i class="fab fa-js"></i></div>
+            <h3>JavaScript</h3>
+            <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+          </div>
+          <div class="skill-card reveal" style="--delay: 0.25s">
+            <div class="skill-icon"><i class="fab fa-react"></i></div>
+            <h3>React</h3>
+            <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+          </div>
+          <div class="skill-card reveal" style="--delay: 0.3s">
+            <div class="skill-icon"><i class="fab fa-node-js"></i></div>
+            <h3>Node.js</h3>
+            <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+          </div>
+          <div class="skill-card reveal" style="--delay: 0.35s">
+            <div class="skill-icon"><i class="fab fa-python"></i></div>
+            <h3>Python</h3>
+            <div class="skill-bar"><div class="skill-fill" data-width="72"></div></div>
+          </div>
+          <div class="skill-card reveal" style="--delay: 0.4s">
+            <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+            <h3>Git</h3>
+            <div class="skill-bar"><div class="skill-fill" data-width="82"></div></div>
+          </div>
+          <div class="skill-card reveal" style="--delay: 0.45s">
+            <div class="skill-icon"><i class="fas fa-database"></i></div>
+            <h3>Databases</h3>
+            <div class="skill-bar"><div class="skill-fill" data-width="65"></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects section" id="projects">
+      <div class="container">
+        <h2 class="section-title reveal">Featured <span>Projects</span></h2>
+        <div class="projects-grid">
+          <div class="project-card reveal" style="--delay: 0.1s">
+            <div class="project-header" style="--card-color: #6c63ff">
+              <i class="fas fa-globe project-icon"></i>
+              <div class="project-links">
+                <a href="#" aria-label="View code"><i class="fab fa-github"></i></a>
+                <a href="#" aria-label="Live demo"><i class="fas fa-external-link-alt"></i></a>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>Portfolio Website</h3>
+              <p>A sleek, responsive personal portfolio built with HTML, CSS, and vanilla JavaScript featuring smooth animations.</p>
+              <div class="project-tags">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card reveal" style="--delay: 0.2s">
+            <div class="project-header" style="--card-color: #00d4aa">
+              <i class="fas fa-robot project-icon"></i>
+              <div class="project-links">
+                <a href="#" aria-label="View code"><i class="fab fa-github"></i></a>
+                <a href="#" aria-label="Live demo"><i class="fas fa-external-link-alt"></i></a>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>AI Chat App</h3>
+              <p>A real-time chat application powered by an AI backend with natural language processing capabilities.</p>
+              <div class="project-tags">
+                <span>React</span><span>Node.js</span><span>OpenAI</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card reveal" style="--delay: 0.3s">
+            <div class="project-header" style="--card-color: #ff6b6b">
+              <i class="fas fa-shopping-cart project-icon"></i>
+              <div class="project-links">
+                <a href="#" aria-label="View code"><i class="fab fa-github"></i></a>
+                <a href="#" aria-label="Live demo"><i class="fas fa-external-link-alt"></i></a>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>E-Commerce Store</h3>
+              <p>Full-stack e-commerce platform with cart, authentication, and payment gateway integration.</p>
+              <div class="project-tags">
+                <span>React</span><span>MongoDB</span><span>Express</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card reveal" style="--delay: 0.4s">
+            <div class="project-header" style="--card-color: #ffd93d">
+              <i class="fas fa-gamepad project-icon"></i>
+              <div class="project-links">
+                <a href="#" aria-label="View code"><i class="fab fa-github"></i></a>
+                <a href="#" aria-label="Live demo"><i class="fas fa-external-link-alt"></i></a>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>Browser Game</h3>
+              <p>A fun 2D browser-based game built with pure JavaScript canvas API featuring leaderboards.</p>
+              <div class="project-tags">
+                <span>JavaScript</span><span>Canvas</span><span>CSS</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card reveal" style="--delay: 0.5s">
+            <div class="project-header" style="--card-color: #a8edea">
+              <i class="fas fa-cloud project-icon"></i>
+              <div class="project-links">
+                <a href="#" aria-label="View code"><i class="fab fa-github"></i></a>
+                <a href="#" aria-label="Live demo"><i class="fas fa-external-link-alt"></i></a>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>Weather Dashboard</h3>
+              <p>Interactive weather dashboard with real-time data, forecasts, and beautiful data visualizations.</p>
+              <div class="project-tags">
+                <span>JavaScript</span><span>API</span><span>Chart.js</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card reveal" style="--delay: 0.6s">
+            <div class="project-header" style="--card-color: #f8a5c2">
+              <i class="fab fa-youtube project-icon"></i>
+              <div class="project-links">
+                <a href="#" aria-label="View code"><i class="fab fa-github"></i></a>
+                <a href="https://youtube.com/@SayondeepYT" aria-label="YouTube channel"><i class="fas fa-external-link-alt"></i></a>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>YouTube Channel</h3>
+              <p>Educational programming tutorials, project walkthroughs, and tech content for developers.</p>
+              <div class="project-tags">
+                <span>Content</span><span>Tutorials</span><span>Dev</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section" id="contact">
+      <div class="container">
+        <h2 class="section-title reveal">Get In <span>Touch</span></h2>
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <h3>Let's work together</h3>
+            <p>Have a project in mind or just want to chat? Drop me a message and I'll get back to you as soon as possible!</p>
+            <div class="contact-items">
+              <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <span>sayondeep@example.com</span>
+              </div>
+              <div class="contact-item">
+                <i class="fab fa-youtube"></i>
+                <span>youtube.com/@SayondeepYT</span>
+              </div>
+              <div class="contact-item">
+                <i class="fab fa-github"></i>
+                <span>github.com/SayondeepYT</span>
+              </div>
+            </div>
+            <div class="contact-socials">
+              <a href="https://github.com/SayondeepYT" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              <a href="https://youtube.com/@SayondeepYT" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+          </div>
+          <form class="contact-form reveal" id="contact-form">
+            <div class="form-group">
+              <input type="text" id="name" placeholder="Your Name" required />
+              <label for="name">Your Name</label>
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" placeholder="Your Email" required />
+              <label for="email">Your Email</label>
+            </div>
+            <div class="form-group">
+              <input type="text" id="subject" placeholder="Subject" required />
+              <label for="subject">Subject</label>
+            </div>
+            <div class="form-group">
+              <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+              <label for="message">Your Message</label>
+            </div>
+            <button type="submit" class="btn btn-primary">
+              <span>Send Message</span>
+              <i class="fas fa-paper-plane"></i>
+            </button>
+            <p class="form-status" id="form-status"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>
+          Designed &amp; Built by
+          <span class="footer-name">Sayondeep</span>
+          &nbsp;&mdash;&nbsp;
+          <span class="footer-year" id="footer-year"></span>
+        </p>
+        <p class="footer-sub">Made with <span class="heart">❤</span> and lots of ☕</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
